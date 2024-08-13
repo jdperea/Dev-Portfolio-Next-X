@@ -13,19 +13,16 @@ const About: NextPage = () => {
   // console.log(services);
 
   return (
-    <div className="flex flex-col flex-grow px-6 pt-1 ">
+    <div className="flex flex-col flex-grow px-6 pt-1  text-justify">
       <h6 className="my-3 text-base font-medium">
-        I am currently pursuing B.Tech Degree(Final Year) in Computer Science
-        Engineering from Academy of Technology. I have 3+ years of experience in
-        Web Development and I have a Youtube Channel where I teach Full Stack
-        Web Development
+        Full Stack Developer con habilidades para la creación y desarrollo de sitios y aplicaciones web a través de React, React Native, Laravel, Symfony, Django. A partir de lo cual, genero soluciones digitales que faciliten el engagement de los usuarios con las aplicaciones implementadas. Caracterizado por la innovación, y la creatividad en la resolución de problemas y trabajo en equipo. También tengo habilidades en minería de datos, rastreo de contenidos usando Python.
       </h6>
       <div
-        className="flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100 "
+        className="flex-grow p-4 mt-5 bg-gray-200 dark:bg-dark-100 "
         style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}
       >
-        <h4 className="my-3 text-xl font-semibold tracking-wide">
-          What I am doing
+        <h4 className="my-3 text-xl font-semibold text-blue-500 tracking-wide">
+          Qué hago
         </h4>
 
         <div className="grid gap-6 my-3 md:grid-cols-2">

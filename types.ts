@@ -12,6 +12,21 @@ export interface Skill {
   level: string;
 }
 
+export interface Studies {
+  title: string;
+  years: string;
+  institution: string;
+}
+
+export interface Experience {
+  company: string;
+  position: string;
+  description: string;
+  languages: string[];
+  phone?: string;
+  date: string;
+}
+
 export interface IProject {
   name: string;
   description: string;

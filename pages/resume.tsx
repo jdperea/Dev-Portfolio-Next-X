@@ -1,5 +1,5 @@
 import Bar from "../components/Bar";
-import { languages, tools } from "../data";
+import { languages, studies, experiences, tools } from "../data";
 
 const Resume = () => {
   return (
@@ -7,32 +7,50 @@ const Resume = () => {
       {/* //! Education & Experience */}
       <div className="grid gap-6 md:grid-cols-2">
         <div>
-          <h5 className="my-3 text-2xl font-bold">Education</h5>
+          <h5 className="my-3 text-2xl font-bold">Educación</h5>
           <div className="">
-            <h5 className="my-2 text-xl font-bold">
-              Computer Science Engineering
+          {studies.map((study, i) => (
+            <div className="pb-2">
+            <h5 className="text-xl font-bold text-red-400">
+              {study.title}
             </h5>
-            <p className="font-semibold">Academy of Technology (2017-2021)</p>
-            <p className="my-3">
-              I am currently pursuing B.tech in Computer Science Engineering
-              from Academy of Technology
-            </p>
+            <p className="font-semibold">{study.institution} (<span className="text-blue-400">{study.years}</span>)</p>
+            </div>
+            ))}
           </div>
         </div>
         <div>
-          <h5 className="my-3 text-2xl font-bold">Experience</h5>
-          <div className="">
-            <h5 className="my-2 text-xl font-bold">Software Developer Jr.</h5>
-            <p className="font-semibold">Tata Consultancy Services</p>
-            <p className="my-3">I don't know why I am doing this job</p>
-          </div>
+          <h5 className="my-3 text-2xl font-bold">Experiencia</h5>
+          {experiences.map((experience, i) => (
+            <div className="pb-2">
+              <h5 className="my-2 text-xl font-bold text-red-400">{experience.position}</h5>
+              <p className="font-semibold">
+                <>
+                {experience.company}
+                {experience.phone ?
+                  <>
+                  , <a href={`tel:+57${experience.phone}`} className="text-blue-500">
+                    {experience.phone}
+                  </a>
+                  </>
+                  : null
+                }
+                </>
+              </p>
+              <p className="my-3 hidden">{experience.description}</p>
+              <p className="my-3">{experience.languages.join(', ')}</p>
+              <p className="w-11/12 px-5 py-2 text-center text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-red-700 to-blue-900 hover:scale-100 focus:outline-none">
+                {experience.date}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 
       {/*Languages & Tools */}
       <div className="grid gap-9 md:grid-cols-2">
         <div>
-          <h5 className="my-3 text-2xl font-bold">Language & Framework</h5>
+          <h5 className="my-3 text-2xl font-bold">Lenguajes y Frameworks</h5>
           <div className="my-2">
             {languages.map((language, i) => (
               <Bar value={language} key={i} />
@@ -41,7 +59,7 @@ const Resume = () => {
         </div>
 
         <div>
-          <h5 className="my-3 text-2xl font-bold">Tools & Softwares</h5>
+          <h5 className="my-3 text-2xl font-bold">Software y Herramientas</h5>
           <div className="my-2">
             {tools.map((tool, i) => (
               <Bar value={tool} key={i} />
