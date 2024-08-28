@@ -6,7 +6,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
    //BY default get request
 
    //! complex backend logic :(
-   console.log('API', services)
+   //console.log('API', services)
 
    res.status(200).json({ services })
 }

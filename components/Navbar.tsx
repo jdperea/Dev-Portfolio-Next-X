@@ -35,7 +35,6 @@ const Navbar = () => {
 
    //later
    useEffect(() => {
-      console.log(pathname)
       if (pathname === '/') {
          setActive('About')
          setTitle('Sobre mi')

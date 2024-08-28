@@ -25,8 +25,12 @@ const ProjectsNavbar: FunctionComponent<{
       <NavItem value="all" {...props} />
       <NavItem value="react" {...props} />
       <NavItem value="mongo" {...props} />
-      <NavItem value="django" {...props} />
+      {/* <NavItem value="django" {...props} />*/}
       <NavItem value="node" {...props} />
+      <NavItem value="php" {...props} />
+      <NavItem value="prestashop" {...props} />
+      <NavItem value="laravel" {...props} />
+      <NavItem value="mysql" {...props} />
     </div>
   );
 };

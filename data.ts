@@ -8,8 +8,8 @@ import { BsCircleFill } from "react-icons/bs";
 import { DiPhp } from "react-icons/di";
 import { GiBrain } from "react-icons/gi";
 import { TbBrandPython, TbBrandDjango, TbBrandBootstrap } from "react-icons/tb";
-import { FaReact, FaPhp, FaDocker } from "react-icons/fa";
-import { SiCreatereactapp, SiVisualstudio, SiFigma, SiDocker, SiLaravel, SiSelenium, SiJira } from "react-icons/si";
+import { FaReact, FaPhp, FaDocker, FaNodeJs } from "react-icons/fa";
+import { SiCreatereactapp, SiVisualstudio, SiFigma, SiDocker, SiLaravel, SiSelenium, SiJira, SiSymfony } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
 export const services: Service[] = [
@@ -52,6 +52,23 @@ export const services: Service[] = [
 ];
 
 export const studies: Studies[] = [
+  /*
+   * 2024	Análisis de Datos Con Power BI 
+   * Comfandi – 40 Horas
+   * 
+   * 2024	Entrenamiento Competencias Transversales (Liderazgo Transformacional)
+   * Comfandi – 40 Horas
+   */
+  {
+    institution: "Comfandi",
+    title: "Análisis de Datos Con Power BI",
+    years: "2024",
+  },
+  {
+    institution: "Comfandi",
+    title: "Entrenamiento Competencias Transversales (Liderazgo Transformacional)",
+    years: "2024",
+  },
   {
     institution: "ParqueSoft TI",
     title: "Curso de 542 horas en Desarrollo de Software",
@@ -110,6 +127,11 @@ export const languages: Skill[] = [
     level: "75",
   },
   {
+    Icon: SiSymfony,
+    name: "Symfony",
+    level: "70",
+  },
+  {
     Icon: TbBrandPython,
     name: "Python",
     level: "65",
@@ -125,9 +147,14 @@ export const languages: Skill[] = [
     level: "60",
   },
   {
+    Icon: FaNodeJs,
+    name: "NodeJS",
+    level: "74",
+  },
+  {
     Icon: FaReact,
     name: "React",
-    level: "80",
+    level: "70",
   },
   {
     Icon: SiCreatereactapp,
@@ -177,80 +204,71 @@ export const tools: Skill[] = [
 export const projects: IProject[] = [
   { 
     name: "COVID Tracker",
-    description:
-      "This app shows a statistical view about corona virus over the world",
-    image_path: "/images/covid.jpg",
-    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
+    description: "Esta aplicación muestra las estadisticas del Corona Virus por todo el mundo.",
+    image_path: "/images/covid.png",
+    deployed_url: "https://covid-19-sigma-beige.vercel.app",
+    github_url: "https://github.com/jdperea/covid-19",
     category: ["react"],
     key_techs: ["React", "Chart.js", "Material UI"],
   },
   {
-    name: "Algorithm Visualizer",
-    image_path: "/images/algoVisual.png",
-    deployed_url: "https://visual-algorithm.web.app/",
-    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-    category: ["react"],
-    description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
+    name: "Instituto 512",
+    image_path: "/images/512.png",
+    deployed_url: "https://512.com.do",
+    github_url: null,
+    category: ["laravel", "mysql", "php"],
+    description: "Experiencia laboral en Kuepa Edu Tech, para el Instituto 512 de República Dominicana",
+    key_techs: ["laravel", "mysql", "php"],
   },
 
   {
-    name: "Dev Talks",
-    image_path: "/images/dev.jpg",
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node", "mongo", "react"],
-    description:
-      "Social Media app for developers who can share project,create posts,etc...",
+    name: "Ska Studio Col",
+    image_path: "/images/skastudiocol.png",
+    deployed_url: "https://www.skastudiocol.com",
+    github_url: null,
+    category: ["php", "mysql", "prestashop"],
+    description: "E-Commerce de venta de productos de moda en Colombia.",
     key_techs: [
-      "React",
-      "Redux",
-      "Node",
-      "Express",
-      "Mongo",
-      "REST API",
-      "Bootstrap",
+      "php",
+      "mysql",
+      "prestashop",
     ],
   },
 
   {
-    name: "Realtime Chat App",
-    image_path: "/images/chatapp.jpg",
-    deployed_url: "https://sumit-chat.netlify.app/",
-    github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-    category: ["node", "react"],
+    name: "Agencia de Empelo No Lucrativa - Kuepa",
+    image_path: "/images/agencia_empleo_kuepa.png",
+    deployed_url: "https://agenciadeempleo.kuepa.com",
+    github_url: null,
+    category: ["php", "laravel", "mysql"],
     description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
-    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
+      "Experiencia laboral en Kuepa Edu Tech, Site de la agencia de empleo creada desde cero con laravel",
+    key_techs: ["php", "laravel", "mysql", "Socket"],
   },
 
   {
-    name: "Tweeter Clone",
-    image_path: "/images/tweetme.jpg",
-    deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-    github_url: "https://github.com/Dey-Sumit/tweetme",
-    category: ["django", "react"],
-    description:
-      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-    key_techs: ["React", "Django", "Django REST API"],
+    name: "IQ Primaria",
+    image_path: "/images/iq.edu.do.png",
+    deployed_url: "https://www.iq.edu.do/site/action/register",
+    github_url: null,
+    category: ["express", "react", "node", "mongo"],
+    description: "Experiencia laboral en Kuepa Edu Tech, Sitio contruido con React",
+    key_techs: ["Express", "Node JS", "React JS", "MongoDB", "Redis", "Socket"],
   },
 
   {
-    name: "Color Classification using tf.js",
-    image_path: "/images/color.jpg",
-    deployed_url: "!#",
-    github_url: "https://github.com/Dey-Sumit/color-classification",
-    category: ["express"],
-    description:
-      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    key_techs: ["Express", "TensorFlow.js", "Vanilla js"],
+    name: "IQ Secundaria",
+    image_path: "/images/iq.sec.png",
+    deployed_url: "https://www.iq.edu.do/app",
+    github_url: null,
+    category: ["express", "mongo", "react", "node"],
+    description: "Experiencia laboral en Kuepa Edu Tech, Sitio contruido con React",
+    key_techs: ["Express", "Node JS", "React JS", "MongoDB",  "Redis", "Socket"],
   },
-  {
+  /*{
     name: "YouTube using YouTube ",
     image_path: "/images/youtubeClone.png",
-    deployed_url: "https://not-utube.web.app/",
+    deployed_url: "!#",
     github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
     category: ["express"],
     description:
@@ -273,5 +291,5 @@ export const projects: IProject[] = [
     description:
       "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
     key_techs: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
-  },
+  },*/
 ];

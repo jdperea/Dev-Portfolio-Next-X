@@ -10,12 +10,17 @@ const Resume = () => {
           <h5 className="my-3 text-2xl font-bold">Educación</h5>
           <div className="">
           {studies.map((study, i) => (
-            <div className="pb-2">
+            <>
+            { i > 0 && (
+              <hr />
+            )}
+            <div className={i>0 ? 'pb-2 pt-1 pb-1' : 'pb-2'} key={i} id={`${i}`}>
             <h5 className="text-xl font-bold text-red-400">
               {study.title}
             </h5>
-            <p className="font-semibold">{study.institution} (<span className="text-blue-400">{study.years}</span>)</p>
+            <p className="font-semibold">{study.institution}<br />(<span className="text-blue-400">{study.years}</span>)</p>
             </div>
+            </>
             ))}
           </div>
         </div>
