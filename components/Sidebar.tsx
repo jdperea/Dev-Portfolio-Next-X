@@ -32,8 +32,8 @@ const Sidebar = () => {
       </p>
       {/* Resume */}
       <a
-        href="/assets/Full Stack Dev - Juan Diego Perea.pdf"
-        download="Full Stack Dev - Juan Diego Perea.pdf"
+        href="/assets/Dev Full Juan Diego Perea Valencia.pdf"
+        download="Dev Full Juan Diego Perea Valencia.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-400"
       >
         <FaFileDownload className="w-5 h-3 text-red-600" />
@@ -78,13 +78,13 @@ const Sidebar = () => {
       </button>
       */}
       <div className="fixed bottom-4 left-4">
-      <button
-        onClick={changeTheme}
-        title="Toggle Theme"
-        className="w-5/12 px-5 py-2 pl-2 pr-6 my-4 text-white bg-black dark:bg-white-200 rounded-full cursor-pointer bg-black focus:outline-none hover:scale-105"
-      >
-        <CgDarkMode />
-      </button>
+        <button
+          onClick={changeTheme}
+          title="Toggle Theme"
+          className="w-5/12 px-5 py-2 pl-2 pr-6 my-4 text-white bg-black dark:bg-white-200 rounded-full cursor-pointer bg-black focus:outline-none hover:scale-105"
+        >
+          <CgDarkMode />
+        </button>
       </div>
     </>
   );
