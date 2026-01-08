@@ -9,7 +9,7 @@ import { DiPhp } from "react-icons/di";
 import { GiBrain } from "react-icons/gi";
 import { TbBrandPython, TbBrandDjango, TbBrandBootstrap } from "react-icons/tb";
 import { FaReact, FaPhp, FaDocker, FaNodeJs } from "react-icons/fa";
-import { SiCreatereactapp, SiVisualstudio, SiFigma, SiDocker, SiLaravel, SiSelenium, SiJira, SiSymfony } from "react-icons/si";
+import { SiCreatereactapp, SiVisualstudio, SiFigma, SiDocker, SiLaravel, SiSelenium, SiJira, SiPrestashop, SiSymfony } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
 export const services: Service[] = [
@@ -84,6 +84,13 @@ export const studies: Studies[] = [
 export const experiences: Experience[] = [
   // company, position, description, languages, date
   {
+    company: "Precompro.com, Bogotá D.C. (En Remoto)",
+    position: "Desarrollador Full Stack",
+    description: "Migración de repositorios de lumen 8 a laravel 10 para mejorar el rendimiento y la seguridad de las aplicaciones de la compañía. Implementación de caching con Redis para estructurar y servir datos de manera eficiente, reduciendo la latencia en aplicaciones de alto tráfico.",
+    languages: ["Bitbucket", "Git", "Python", "Laravel", "MongoDB", "Redis", "Socket", "Vue 2", "Node JS", "Express"],
+    date: "Sep 2024 – Oct 2025",
+  },
+  {
     company: "FREELANCE",
     position: "Python Developer (Selenium)",
     description: "Cree una herramienta en Python que permitiría el Crawling de algunas de las páginas de una lista de URLS que me proporcionó a través de un CSV. Implementé una solución usando Django y MongoDB para permitir el Crawling de cada uno de los sitios que el usuario requería.",
@@ -94,14 +101,14 @@ export const experiences: Experience[] = [
     company: "KUEPA EDU TECH, Bogotá D.C. (En Remoto)",
     position: "Desarrollador Full Stack",
     description: "Estuve vinculado a la compañía como soporte a aplicaciones antiguas y modernas; Por motivos de la compañía aun se venía utilizando un sistema de gestión de pagos por algunos que estudiantes que no habían culminado sus estudios en la plataforma antigua a los que había que brindarles el soporte adecuado, entre otras funciones tenía estrecha colaboración con equipos interdisciplinarios para desarrollar nuevas funcionalidades y resolver errores con lo que se tenía de momento en producción, Rediseño y optimización de sitios web para mejorar la carga, el rendimiento y la navegación.",
-    languages: ["PHP","React","Laravel","Symfony","Mongo DB"],
+    languages: ["PHP", "React", "Laravel", "Symfony", "Mongo DB"],
     phone: "6019177888",
     date: "Dic 2021 – Jun 2023",
-  },{
+  }, {
     company: "Moda de Colombia S.A.S., Santiago de Cali",
     position: "Full Stack Developer / Jefe de Sistemas",
     description: "En esta compañía inicié como Auxiliar de Sistemas en 2015, por mi buen desempeño fui promovido a coordinar el equipo de desarrollo de la compañía. Entre otros las funciones fueron:<br /><ul><li>Resolución de problemas técnicos y de rendimiento de los sistemas.</li><li>Implementación de soluciones tecnológicas para la empresa.</li><li>Gestión del equipo de tecnologías de la información así como cumplimiento en las entregas de las tareas asignadas y sus plazos.</li><li>Supervisión de redes y seguridad informática.</li><li>Diseño de interfaces amigables con el usuario y estéticamente atractivas.</li><li>Colaboración con los diferentes departamentos de la empresa.</li></ul>",
-    languages: ["Jira","GitLab","Symfony","Prestashop","MySQL","Laravel","DevOps"],
+    languages: ["Jira", "GitLab", "Symfony", "Prestashop", "MySQL", "Laravel", "DevOps"],
     phone: "6025141406",
     date: "Jul 2015 - Dic 2021",
   },/*
@@ -125,6 +132,11 @@ export const languages: Skill[] = [
     Icon: SiLaravel,
     name: "Laravel",
     level: "75",
+  },
+  {
+    Icon: SiPrestashop,
+    name: "Prestashop",
+    level: "73",
   },
   {
     Icon: SiSymfony,
@@ -195,14 +207,14 @@ export const tools: Skill[] = [
     level: "80",
   },
   {
-    Icon: SiJira ,
+    Icon: SiJira,
     name: "Jira",
     level: "75",
   },
 ];
 
 export const projects: IProject[] = [
-  { 
+  {
     name: "COVID Tracker",
     description: "Esta aplicación muestra las estadisticas del Corona Virus por todo el mundo.",
     image_path: "/images/covid.png",
@@ -263,7 +275,7 @@ export const projects: IProject[] = [
     github_url: null,
     category: ["express", "mongo", "react", "node"],
     description: "Experiencia laboral en Kuepa Edu Tech, Sitio contruido con React",
-    key_techs: ["Express", "Node JS", "React JS", "MongoDB",  "Redis", "Socket"],
+    key_techs: ["Express", "Node JS", "React JS", "MongoDB", "Redis", "Socket"],
   },
   /*{
     name: "YouTube using YouTube ",
